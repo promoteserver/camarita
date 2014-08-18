@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Hello World</title>
+        <style>
+body {        
+    background-color:#E4E4E4;  
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;  
+    font-size:12px;  
+    height:100%;  
+    margin:0px;  
+    padding:0px;  
+    width:100%;  
+}  
+  
+#photo{  
+    display:none;  
+    width:200px;  
+    height:200px;  
+}  
+  
+#sendPhoto{  
+    display: none;  
+}
+        </style>
+    </head>
+    <body>
+        
+   <div id="content" style="margin-top: 100px;">  
+    <h1>Acceso a la cámara con PhoneGap</h1>  
+    <button id="takePhoto">TOMAR FOTO</button>  
+    <img id="photo" src="">  
+    <button id="sendPhoto">ENVIAR FOTO</button>  
+    <button id="win">win</button>
+</div>  
+<script type="text/javascript" src="cordova.js"></script>  
+<script type="text/javascript" src="js/index.js"></script>  
+<script type="text/javascript">app.initialize();</script> 
+    </body>
+</html>
